@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../assets/images/background.jpg');
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    align-items:flex-start;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #333;
+    animation: bounceInDown 1s;
+}
+
+p {
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+input:focus {
+    border-color: #722F37;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #722F37;
+    color: #fff;
+    border: none;
+    border-radius: 6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #5a1e2a;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+

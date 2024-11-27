@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>About Us - Akornor Hub</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #f3f3f3;
+        background-image: url("../assets/images/background.jpg"); /* Background image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      /* Overlay for the body */
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* Increased transparency */
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      /* Header Section */
+      header {
+        background-color: none; /* Same as text color for a clear header */
+        color: solid #ffa500; /* Text color to match header */
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+
+      header p {
+        margin: 10px 0 0;
+        font-size: 1.2rem;
+      }
+
+      /* Container Section */
+      .container {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(41, 41, 41, 0.8); /* Slightly more transparent */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Section Titles */
+      h2 {
+        color: #ffa500;
+        border-bottom: 2px solid #ffa500;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+
+      /* Text Styling */
+      p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      ul li strong {
+        color: #ffa500;
+      }
+
+      /* Gallery Section */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .gallery img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Footer Section */
+      footer {
+        position: absolute;
+        background-color: none;
+        color: #f3f3f3; /* Text color to match footer */
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      /* Buttons (if needed later) */
+      .btn {
+        display: inline-block;
+        background-color: #ffa500;
+        color: #1a1a1a;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #e59400;
+        color: #fff;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .gallery {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <header>
+        <h1>Welcome to Akornor Hub</h1>
+        <p>Your Culinary Oasis at Ashesi University</p>
+      </header>
+
+      <div class="container">
+        <section>
+          <h2>About Us</h2>
+          <p>
+            Nestled within the vibrant Ashesi University campus, Akornor Hub is
+            more than just a restaurant—it's a space where flavor meets fun, and
+            community comes alive. Whether you're looking for a place to unwind,
+            enjoy a meal, or challenge your friends to a game of pool, Akornor
+            Hub is the perfect spot to make memories.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Choose Akornor Hub?</h2>
+          <ul>
+            <li>
+              <strong>A Variety of Cuisine:</strong> Savor the flavors of
+              diverse, carefully curated dishes that cater to every palate.
+            </li>
+            <li>
+              <strong>The Ultimate Hangout Spot:</strong> Enjoy a friendly game
+              of pool or simply relax in our welcoming atmosphere.
+            </li>
+            <li>
+              <strong>Unmatched Convenience:</strong> Located right on campus,
+              we're here to provide students, faculty, and visitors with
+              delicious meals and a place to recharge.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Gallery</h2>
+          <div class="gallery">
+            <img
+              src="../assets/images/AkornorWorkers.png"
+              alt="Interior of Akornor Hub"
+            />
+            <img
+              src="../assets/images/PoolTable.png"
+              alt="Akornor Hub Pool Table"
+            />
+            <img
+              src="../assets/images/RestaurantSide.png"
+              alt="Delicious Cuisine at Akornor Hub"
+            />
+          </div>
+        </section>
+
+        <section>
+          <h2>Visit Us Today</h2>
+          <p>
+            Step into Akornor Hub and experience the perfect blend of great
+            food, entertainment, and community. We're open 24 hours and ready to
+            welcome you with a smile.
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Akornor Hub. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

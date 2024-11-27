@@ -1,0 +1,91 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn .5s ease-in;
+        }
+
+        .form-title {
+            text-align: center;
+            color: #333;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-textarea {
+            min-height: 100px;
+        }
+
+        .form-button {
+            padding: 10px;
+            background-color: #5a1e2a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .animate-fade-right {
+            opacity: 0;
+            animation: fadeRight 2s ease forwards;
+          }
+          
+          .animate-fade-left {
+            opacity: 0;
+            animation: fadeLeft 2s ease forwards;
+          }
+          
+          
+          .animate-zoom-in {
+            opacity: 0;
+            animation: zoomIn 2s ease forwards;
+          }
+        
+          .animate-zoom-in-up {
+            opacity: 0;
+            animation: zoomIn 2s ease forwards;
+        
+          }
+          
+          .delay-200 {
+            animation-delay: 200ms;
+          }
+          
+          .delay-400 {
+            animation-delay: 400ms;
+          }
+          .delay-600 {
+            animation-delay: 600ms;
+          }
+        
+          .duration-1000 {
+            animation-duration: 1000ms;
+          }
+          
+        

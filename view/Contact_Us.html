@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Akornor Hub</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #f3f3f3;
+      background-image: url('../assets/images/background.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Overlay for the body */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6); /* Overlay with increased transparency */
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    /* Header Section */
+    header {
+      color: #f3f3f3;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    /* Container Section */
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(41, 41, 41, 0.8); /* Slightly transparent container */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #ffa500;
+      border-bottom: 2px solid #ffa500;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    /* Text Styling */
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info div {
+      margin-bottom: 15px;
+    }
+
+    .contact-info span {
+      font-weight: bold;
+    }
+
+    /* Contact Form */
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #ffa500;
+      color: #1a1a1a;
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #e59400;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #f3f3f3;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      /* Overlay for the body */
+      .overlay {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        ); /* Overlay with increased transparency */
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      /* Header Section */
+      header {
+        background-color: none;
+        color: #f3f3f3;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+
+      header p {
+        margin: 10px 0 0;
+        font-size: 1.2rem;
+      }
+
+      /* Container Section */
+      .container {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(41, 41, 41, 0.8); /* Slightly transparent container */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Section Titles */
+      h2 {
+        color: #ffa500;
+        border-bottom: 2px solid #ffa500;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+
+      /* Text Styling */
+      p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+      }
+
+      /* Contact Info Section */
+      .contact-info {
+        margin-bottom: 40px;
+      }
+
+      .contact-info div {
+        margin-bottom: 15px;
+      }
+
+      .contact-info span {
+        font-weight: bold;
+      }
+
+      /* Contact Form */
+      form {
+        display: grid;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .submit-btn {
+        background-color: #ffa500;
+        color: #1a1a1a;
+        padding: 15px 25px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .submit-btn:hover {
+        background-color: #e59400;
+      }
+
+      /* Footer Section */
+      footer {
+        background-color: none;
+        color: #f3f3f3;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+        }
+        .contact-info div,
+        .contact-info span,
+        form {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <header>
+        <h1>Contact Us - Akornor Hub</h1>
+        <p>
+          We'd love to hear from you! Reach out to us for any inquiries or
+          feedback.
+        </p>
+      </header>
+
+      <div class="container">
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <div>
+            <span>Address:</span> Akornor Hub, Ashesi University, Berekuso,
+            Ghana
+          </div>
+          <div><span>Phone:</span> +233 500 000 000</div>
+          <div><span>Email:</span> contact@akornorhub.com</div>
+        </section>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Akornor Hub. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
